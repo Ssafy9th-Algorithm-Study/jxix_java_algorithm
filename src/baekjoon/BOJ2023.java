@@ -13,7 +13,7 @@ public class BOJ2023 {
             sb.append("\n");
             return;
         }
-        for (int i=1;i<10;i++){
+        for (int i=1;i<10;i+=2){
             if (isPrime(num*10 + i)){
                 makePrime(num*10 + i, N,cnt+1);
             }
