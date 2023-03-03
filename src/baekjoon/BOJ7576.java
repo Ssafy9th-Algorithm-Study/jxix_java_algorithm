@@ -31,7 +31,6 @@ public class BOJ7576 {
                 map[r][c] = Integer.parseInt(st.nextToken());
             }
         }
-        int ans = -1;
         for (int r = 0; r < N; r++) {
             for (int c = 0; c < M; c++) {
                 if (map[r][c] == 1 && !visited[r][c]) {
@@ -39,7 +38,7 @@ public class BOJ7576 {
                 }
             }
         }
-        ans = bfs();
+        int ans = bfs();
         for (int r = 0; r < N; r++) {
             for (int c = 0; c < M; c++) {
                if (map[r][c] == 0){
